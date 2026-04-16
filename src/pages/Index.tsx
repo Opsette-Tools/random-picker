@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { usePicker } from "@/hooks/usePicker";
 import { usePresets } from "@/hooks/usePresets";
 import { ItemInput } from "@/components/ItemInput";
@@ -8,6 +9,7 @@ import { PresetManager } from "@/components/PresetManager";
 import { Dices } from "lucide-react";
 
 const Index = () => {
+  const navigate = useNavigate();
   const picker = usePicker();
   const presetStore = usePresets();
 
@@ -67,6 +69,23 @@ const Index = () => {
             loadDemo={picker.loadDemo}
           />
         </section>
+
+        <div className="flex justify-center gap-4 pt-2 text-xs text-muted-foreground">
+          <button onClick={() => navigate('/about')} className="hover:text-foreground transition-colors">
+            About
+          </button>
+          <span>·</span>
+          <button onClick={() => navigate('/privacy')} className="hover:text-foreground transition-colors">
+            Privacy
+          </button>
+          <span>·</span>
+          <span>
+            By{' '}
+            <a href="https://opsette.io" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">
+              Opsette
+            </a>
+          </span>
+        </div>
       </main>
     </div>
   );
