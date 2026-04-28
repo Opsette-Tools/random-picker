@@ -7,6 +7,7 @@ import { ResultCard } from "@/components/ResultCard";
 import { PickHistory } from "@/components/PickHistory";
 import { PresetManager } from "@/components/PresetManager";
 import { Dices } from "lucide-react";
+import { ShareAppButton } from "@/components/opsette-share";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -16,9 +17,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
-      <header className="flex items-center justify-center gap-2 pt-6 pb-2">
+      <header className="relative flex items-center justify-center gap-2 pt-6 pb-2">
         <Dices className="h-6 w-6 text-primary" />
         <h1 className="text-xl font-bold text-foreground">Random Picker</h1>
+        <div className="absolute right-4 top-5">
+          <ShareAppButton size={36} />
+        </div>
       </header>
 
       <main className="flex-1 w-full max-w-lg mx-auto px-4 pb-8 space-y-6">
