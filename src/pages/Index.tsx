@@ -7,6 +7,7 @@ import { ResultCard } from "@/components/ResultCard";
 import { PickHistory } from "@/components/PickHistory";
 import { PresetManager } from "@/components/PresetManager";
 import { OpsetteHeader } from "@/components/opsette-header";
+import { ThemeToggleButton } from "@/components/ThemeToggleButton";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <OpsetteHeader />
+      <OpsetteHeader rightExtra={<ThemeToggleButton />} />
 
       <main className="flex-1 w-full max-w-lg mx-auto px-4 pb-8 space-y-6">
         {/* Result — center stage */}

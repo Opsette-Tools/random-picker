@@ -4,13 +4,47 @@
 
 @layer base {
   :root {
-    --background: 240 6% 10%;
+    --background: 0 0% 96%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 4% 92%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 240 5% 94%;
+    --muted-foreground: 240 4% 40%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5% 88%;
+    --input: 240 5% 88%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.75rem;
+
+    --spotlight-glow: 262 83% 58%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
     --foreground: 0 0% 95%;
 
-    --card: 240 5% 14%;
+    --card: 0 0% 8%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 240 5% 14%;
+    --popover: 0 0% 8%;
     --popover-foreground: 0 0% 95%;
 
     --primary: 262 83% 58%;
@@ -20,7 +54,7 @@
     --secondary-foreground: 0 0% 90%;
 
     --muted: 240 4% 18%;
-    --muted-foreground: 240 5% 55%;
+    --muted-foreground: 0 0% 65%;
 
     --accent: 262 83% 58%;
     --accent-foreground: 0 0% 100%;
@@ -28,11 +62,9 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 4% 22%;
-    --input: 240 4% 22%;
+    --border: 0 0% 19%;
+    --input: 0 0% 19%;
     --ring: 262 83% 58%;
-
-    --radius: 0.75rem;
 
     --spotlight-glow: 262 83% 58%;
   }
