@@ -18,35 +18,13 @@ export default defineConfig(({ mode, command }) => ({
     mode === "development" && componentTagger(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg", "icon-192.png", "icon-512.png"],
       devOptions: {
         enabled: false,
       },
+      manifest: false,
       workbox: {
+        navigateFallback: "index.html",
         navigateFallbackDenylist: [/^\/~oauth/],
-      },
-      manifest: {
-        name: "Random Picker",
-        short_name: "Picker",
-        description: "A fast, random selection tool",
-        start_url: ".",
-        theme_color: "#1a1a2e",
-        background_color: "#1a1a2e",
-        display: "standalone",
-        icons: [
-          {
-            src: "icon-192.png",
-            sizes: "192x192",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "icon-512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-        ],
       },
     }),
   ].filter(Boolean),

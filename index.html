@@ -2,25 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Picker — Instant Decision Tool</title>
-    <meta name="description" content="A fast, fun random selection tool. Pick names, tasks, or choices instantly with animation. No signup required." />
-    <meta name="author" content="Lovable" />
-    <meta name="theme-color" content="#1a1a2e" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-    <meta property="og:title" content="Random Picker" />
-    <meta property="og:description" content="Instant random selection tool for groups and individuals." />
+    <!-- Primary -->
+    <title>Random Picker — Opsette</title>
+    <meta name="description" content="Pick a random item from your list." />
+    <meta name="author" content="Opsette" />
+    <meta name="theme-color" content="#2f4f46" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Random Picker" />
+
+    <!-- Open Graph / share previews -->
+    <meta property="og:site_name" content="Opsette Tools" />
+    <meta property="og:title" content="Random Picker — Opsette" />
+    <meta property="og:description" content="Pick a random item from your list." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tools.opsette.io/random-picker/" />
+    <meta property="og:image" content="https://tools.opsette.io/random-picker/og-image.png" />
 
-    <meta name="twitter:card" content="summary" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Random Picker — Opsette" />
+    <meta name="twitter:description" content="Pick a random item from your list." />
+    <meta name="twitter:image" content="https://tools.opsette.io/random-picker/og-image.png" />
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
