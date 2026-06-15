@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+﻿import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
@@ -8,7 +8,7 @@ export default defineConfig(({ mode, command }) => ({
   base: command === "build" ? "/random-picker/" : "/",
   server: {
     host: "::",
-    port: 8080,
+    port: 8109,
     hmr: {
       overlay: false,
     },
